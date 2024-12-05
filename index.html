@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <!-- Ensure all characters are displayed correctly -->
     <meta charset="UTF-8">
 
@@ -9,16 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title of the webpage -->
-    <title>Automated Oxygen Therapy </title>
+    <title>Automated Oxygen Therapy</title>
 
-    <!-- Linkto an CSS file to style the webpage -->
+    <!-- Link to CSS file to style the webpage -->
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>   
+    <header>
         <!-- Main heading -->
-        <h1>Automated Oxygen Therapy </h1>
+        <h1>Automated Oxygen Therapy</h1>
         <p>Real-time and Historical Patient Data</p>
     </header>
 
@@ -27,10 +25,10 @@
         <section id="live-monitoring">
             <h2>Live Monitoring</h2> <!-- Subheading -->
             <div class="data-display">
-		<!-- Display real time data -->
-                <p>Heart Rate: <span id="heart-rate">--</span> bpm</p>
-                <p>Blood Oxygen Levels: <span id="spo2-levels">--</span>%</p>
-                <p>Flow Rate: <span id="flow-rate">--</span> L/min</p>
+                <!-- Display real-time data -->
+                <p>Heart Rate: <span id="heart-rate">Loading...</span> bpm</p>
+                <p>Blood Oxygen Levels: <span id="spo2-levels">Loading...</span>%</p>
+                <p>Flow Rate: <span id="flow-rate">Loading...</span> L/min</p>
             </div>
         </section>
 
@@ -38,18 +36,31 @@
         <section id="historical-data">
             <h2>Historical Data</h2> <!-- Subheading -->
             <div id="graphs">
-                <iframe id="hr-graph" src="" frameborder="0"></iframe>
-                <iframe id="spo2-graph" src="" frameborder="0"></iframe>
-                <iframe id="flow-graph" src="" frameborder="0"></iframe>
+                <!-- Embedding ThingSpeak charts -->
+                <iframe id="hr-graph" 
+                        src="https://thingspeak.com/channels/2771994/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true" 
+                        frameborder="0" 
+                        width="600" 
+                        height="400"></iframe>
+                <iframe id="spo2-graph" 
+                        src="https://thingspeak.com/channels/2771994/charts/2?bgcolor=%23ffffff&color=%2300ff00&dynamic=true" 
+                        frameborder="0" 
+                        width="600" 
+                        height="400"></iframe>
+                <iframe id="flow-graph" 
+                        src="https://thingspeak.com/channels/2771994/charts/3?bgcolor=%23ffffff&color=%230000ff&dynamic=true" 
+                        frameborder="0" 
+                        width="600" 
+                        height="400"></iframe>
             </div>
         </section>
-
     </main>
 
     <footer>
-        <p> Automated Oxygen Therapy System - Embedded Syestems Project</p>
+        <p>Automated Oxygen Therapy System - Embedded Systems Project</p>
     </footer>
 
+    <!-- Include JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
