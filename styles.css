@@ -45,21 +45,21 @@ h2 {
 }
 
 /* Graph container style */
+/* Ensure the graphs are stacked vertically and have some space between them */
 #graphs {
-    display: flex;
-    flex-wrap: wrap; /* Allows iframes to wrap to next line if there's not enough space */
-    justify-content: space-between; /* Distribute space evenly between the graphs */
-    gap: 10px; /* Space between graphs */
-    margin-top: 10px; /* Adds some space above the graphs */
+    display: flex; /* Enables flexbox */
+    flex-direction: column; /* Aligns items vertically */
+    align-items: center; /* Centers the graphs */
+    gap: 20px; /* Adds space between each graph */
+    margin-top: 20px; /* Space above the graph section */
 }
 
-/* Graph Frames */
 iframe {
-    width: 100%; /* Make graph the full width */
-    height: 350px; /* Set a fixed height for the graph */
-    border: 1px solid #ddd; /* Border around the graph frames */
-    margin: 0.5rem 0; /* Adds space between each graph */
-    border-radius: 5px; /* Round corners for graph frames */
+    width: 90%; /* Adjust the width to fit within the container */
+    height: 400px; /* Set a fixed height */
+    border: 1px solid #ddd;
+    margin-bottom: 10px; /* Space between the graphs */
+    border-radius: 5px;
 }
 
 /* Responsive Design: Make iframes responsive */
