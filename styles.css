@@ -1,0 +1,66 @@
+/* General Style for webpage */
+body {
+    font-family: Arial, sans-serif; /* Determine the font */
+    font-size: 1.4rem; /* Font size */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f1f5f8;
+    color: #333;
+}
+
+/* Header Section Style */
+header {
+    background-color: #00796b; /* Select colour */
+    color: white; /* White text to contrast with the dark header */
+    text-align: center; /* Centers the text  */
+    padding: 1rem; /* Adds padding around the text inside the header */
+}
+
+/* Main Content Style */
+main {
+    padding: 1rem; /* Adds extra padding around the main content */
+}
+
+
+/* Styling for specific sections in the main content */
+#live-monitoring, #historical-data {
+    margin: 2rem 0; /* Add space above and below these sections */
+    padding: 1rem; /* Add padding inside these sections */
+    background: white; /* Set background colour of the sections to white */
+    border: 1px solid #ddd; /* Add light gray border around the sections */
+    border-radius: 5px; /* Round corners */
+}
+
+/*  Headings Style */
+h2 {
+    text-align: center; /* Center headings */
+    color: #00796b; /* Sets the text colour */
+}
+
+/* Style for live data display */
+.data-display {
+    text-align: center; /* Center text  */
+    font-size: 1.1rem; /* Font size */
+    font-weight: bold; 
+    color: #000; /* Black text */
+}
+
+
+
+/* Graph Frames */
+iframe {
+    width: 100%; /* Make graph the full width */
+    height: 350px; /* Set the height */
+    border: 1px solid #ddd; /* Border around the graph frames */
+    margin: 0.5rem 0; /* Add space between each graph */
+    border-radius: 5px; /* Round corners for graph frames */
+}
+
+/* Footer Section style */
+footer {
+    text-align: center; /* Center the footer text */
+    padding: 1rem; /* Adds padding inside the footer */
+    background-color: #00796b;/* Same as heading*/
+    color: white; /* White text*/
+    font-size: 0.9rem; /* Slightly smaller font for footer text */
+}

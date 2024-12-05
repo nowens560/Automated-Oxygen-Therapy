@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Ensure all characters are displayed correctly -->
+    <meta charset="UTF-8">
+
+    <!-- Makes sure the page adjusts to different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>Automated Oxygen Therapy </title>
+
+    <!-- Linkto an CSS file to style the webpage -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>   
+        <!-- Main heading -->
+        <h1>Automated Oxygen Therapy </h1>
+        <p>Real-time and Historical Patient Data</p>
+    </header>
+
+    <main>
+        <!-- Section for displaying Live patient info -->
+        <section id="live-monitoring">
+            <h2>Live Monitoring</h2> <!-- Subheading -->
+            <div class="data-display">
+		<!-- Display real time data -->
+                <p>Heart Rate: <span id="heart-rate">--</span> bpm</p>
+                <p>Blood Oxygen Levels: <span id="spo2-levels">--</span>%</p>
+                <p>Flow Rate: <span id="flow-rate">--</span> L/min</p>
+            </div>
+        </section>
+
+        <!-- Section for displaying historical data -->
+        <section id="historical-data">
+            <h2>Historical Data</h2> <!-- Subheading -->
+            <div id="graphs">
+                <iframe id="hr-graph" src="" frameborder="0"></iframe>
+                <iframe id="spo2-graph" src="" frameborder="0"></iframe>
+                <iframe id="flow-graph" src="" frameborder="0"></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> Automated Oxygen Therapy System - Embedded Syestems Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
